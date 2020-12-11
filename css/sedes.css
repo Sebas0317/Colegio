@@ -1,0 +1,99 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header-sedes h1{
+    padding-top: 30px;
+    color: #444;
+    font-size: 40px;
+    margin: auto;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+.sedes{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.lbl-menu{
+    border: 1px solid black;
+}
+.lbl-menu label{
+    display: inline-block;
+    padding: 20px;
+    color: black;
+    cursor: pointer;
+    transition: all 400ms ease;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.lbl-menu label:hover{
+    background: #dad7d7;
+}
+.sedes1{
+    position: relative;
+}
+.sedes1 div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+   background: #949494;
+    padding-bottom: 40px;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+#radio1,#radio2,#radio3,#radio4{
+    display: none;
+}
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4
+{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.sedes1 div:after{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #949494;
+    bottom: 100%;
+    left: 28px;
+}
+.sedes1 .tab2:after{
+    left: 210px;
+}
+.sedes1 .tab3:after{
+    left: 400px;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+	.sedes{
+	width: 90%;
+	}
+}
+
+
+.footer{
+    margin-top: 500px;
+}
+
+.sedes1 div img{
+    margin-right: 20px;
+    width: 300px;
+    float: left;
+    margin-top: 10px;
+}

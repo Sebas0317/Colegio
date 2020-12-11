@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    min-height:100vh;
+    font-family: "Josefin Sans";
+  }
+  
+  h1{
+    font-size: 60px;
+    text-align:center;
+    margin: 50px;
+    margin-top: 70px;
+  }
+  
+  .gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin: 50px;
+    
+  }
+  img{
+    width: 500px;
+    height:300px;
+    margin: 20px;
+    box-shadow: 3px 2px 14px lightgrey;
+  }
+  
+  
